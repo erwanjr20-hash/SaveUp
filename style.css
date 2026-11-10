@@ -1,0 +1,346 @@
+* {
+    max-height: 640px;
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --Navy-blue: #172554;
+    --navy-gelap: #0F2340;
+    --Blue: #2563EB;
+    --White: #FFFFFF;
+    --Light-Gray: #F1F5F9;
+    --Secondary-Text : #64748B;
+    --Dark-Text : #1E293B;
+    --Green : #16A34A;
+    --Red : #DC2626;
+    --active : #378ADD;
+    --hover : #1E4268;
+}
+
+.container-utama {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--navy-gelap);
+}
+.content-sidebar {
+    margin-left: 25px;
+}
+.card {
+    display: flex;
+    align-items: center;
+}
+.card img {
+    width: 50px;
+    border-radius: 15px;
+}
+.teks {
+    margin-left: 10px;
+}
+.teks h2 {
+    color: var(--White);
+}
+.teks p {
+    margin-top: -20px;
+    color: var(--Secondary-Text);
+    margin-bottom: 30px;
+    font-size: 10px;
+}
+
+.section-sidebar {
+    width: 220px;
+    padding: 20px 8px;
+    margin-left: -10px;
+    box-sizing: border-box;
+}
+.section-sidebar h3 {
+    color: #94A3B8;
+    font-size: 12px;
+    margin: 10px 12px 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.section-sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: #CBD5E1;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    margin-bottom: 4px;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+.section-sidebar a span {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #49617D;
+    border-radius: 6px;
+    font-size: 9px;
+    font-weight: bold;
+    color: #CBD5E1;
+}
+.section-sidebar a:hover {
+    background-color: #1E4268;
+    color: #FFFFFF;
+}
+.section-sidebar a.active {
+    background-color: #1E4268;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.section-sidebar a.active span {
+    border-color: #6485A8;
+    color: #FFFFFF;
+}
+
+.akun {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+.lambang-akun {
+    content: "";
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.nama {
+    color: var(--White);
+}
+.log-out {
+    width: 220px;
+    padding: 20px 8px;
+    margin-left: -20px;
+    box-sizing: border-box;
+}
+.log-out a {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    color: var(--Red);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px;
+    margin-bottom: 4px;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+.log-out a span {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #49617D;
+    border-radius: 6px;
+    font-size: 9px;
+    font-weight: bold;
+    color: var(--Red);
+}
+hr {
+    width: 240px;
+    margin-left: -30px;
+    margin-top: 140px;
+}
+
+
+
+/* HEADER */
+
+
+.header {
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11vh;
+    width: 990px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* SECTION */
+
+
+.section {
+    background-color: var(--Light-Gray);
+    height: 89vh;
+}
+.flex1 {
+    display: flex;
+}
+.card1 {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: -10px;
+    border-radius: 12px;
+    background-color: var(--navy-gelap);
+    width: 190px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+}
+.card2 {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: -10px;
+    border-radius: 12px;
+    background-color: var(--White);
+    width: 190px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+}
+.kotak-card {
+    background-color: var(--hover);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.kotak-card p {
+    margin-top: 7px;
+    font-size: 11px;
+    color: var(--White);
+}
+.kotak-card1 {
+    background-color: var(--Blue);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.kotak-card1 p {
+    margin-top: 7px;
+    font-size: 11px;
+    color: var(--White);
+}
+.kotak-card2 {
+    background-color: var(--Red);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.kotak-card2 p {
+    margin-top: 7px;
+    font-size: 11px;
+    color: var(--White);
+}
+.judul-card1 {
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 10px;
+}
+.judul-card1 p {
+    color: var(--Secondary-Text);
+}
+.judul-card1 h3 {
+    color: var(--White);
+}
+.judul-card {
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 10px;
+}
+.judul-card p {
+    color: var(--Secondary-Text);
+}
+.judul-card h3 {
+    color: black;
+}
+.flex2 {
+    display: flex;
+}
+.container-table {
+    margin-left: 30px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    width: 71%;
+    background-color: var(--White);
+    border-radius: 12px;
+    height: 280px;
+}
+.judul-table {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.judul-table a {
+ text-decoration: none;
+ color: var(--Blue);
+ font-size: 9px;
+}
+.container-table h3{
+font-size: 15px;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    font-weight: bold;
+}
+thead tr th {
+    background-color: var(--Light-Gray);
+    font-size: 7px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    color: var(--Secondary-Text);
+}
+tbody tr td {
+    background-color: var(--White);
+    color: var(--Secondary-Text);
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+.button-transaksi {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.btn {
+    text-decoration: none;
+    font-size: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 70px;
+    color: var(--White);
+    background-color: var(--Blue);
+}
+.edit {
+text-decoration: none;
+color: #fff;
+background-color: #14532d;
+padding: 3px 6px;
+border-radius: 5px;
+}
+.hapus {
+text-decoration: none;
+color: #fff;
+background-color: #dc3545;
+padding: 3px 6px;
+border-radius: 5px;
+}
